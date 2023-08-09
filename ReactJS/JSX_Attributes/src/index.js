@@ -6,6 +6,7 @@ const img = "https://picsum.photos/200";
 ReactDOM.render(
   <div>
     <h1 className="heading">My Favourite Foods</h1>
+    {/* code comes from lorem picsum website */}
     <img alt="random" src={img + "?grayscale"} />
 
     <img
