@@ -7,7 +7,8 @@ function App() {
     <div>
       <Heading />
       <List />
-      <List />
+      {/* we can reuse the same component */}
+      <List />   
     </div>
   );
 }
