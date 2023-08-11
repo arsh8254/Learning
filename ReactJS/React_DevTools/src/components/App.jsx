@@ -7,7 +7,6 @@ function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-      <Avatar img="https://pbs.twimg.com/profile_images/744849215675838464/IH0FNIXk.jpg" />
       <Card
         name={contacts[0].name}
         img={contacts[0].imgURL}
@@ -21,7 +20,7 @@ function App() {
         tel={contacts[1].phone}
         email={contacts[1].email}
       />
-      
+
       <Card
         name={contacts[2].name}
         img={contacts[2].imgURL}
