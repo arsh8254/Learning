@@ -7,6 +7,7 @@ const contacts = [
     phone: "+123 456 789",
     email: "b@beyonce.com"
   },
+
   {
     id: 2,
     name: "Jack Bauer",
@@ -15,6 +16,7 @@ const contacts = [
     phone: "+987 654 321",
     email: "jack@nowhere.com"
   },
+  
   {
     id: 3,
     name: "Chuck Norris",
