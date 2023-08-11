@@ -1,3 +1,5 @@
+// array of javascript objects
+
 const contacts = [
   {
     name: "Beyonce",
@@ -6,6 +8,7 @@ const contacts = [
     phone: "+123 456 789",
     email: "b@beyonce.com"
   },
+
   {
     name: "Jack Bauer",
     imgURL:
@@ -13,6 +16,7 @@ const contacts = [
     phone: "+987 654 321",
     email: "jack@nowhere.com"
   },
+
   {
     name: "Chuck Norris",
     imgURL:
@@ -22,4 +26,5 @@ const contacts = [
   }
 ];
 
+// constants can also be exported from a file just like functions
 export default contacts;

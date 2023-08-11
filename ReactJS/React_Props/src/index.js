@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// props is used to provide repetitive information
 function Card(props) {
   return (
     <div>
