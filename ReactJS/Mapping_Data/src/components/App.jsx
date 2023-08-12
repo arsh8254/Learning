@@ -5,7 +5,7 @@ import contacts from "../contacts";
 function createCard(contact) {
   return (
     <Card
-      key={contact.id}
+      key={contact.id}   //this key prop must be present in any custom componenet as per react rules
       name={contact.name}
       img={contact.imgURL}
       tel={contact.phone}
@@ -18,7 +18,8 @@ function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-      {contacts.map(createCard)}
+      {/* we are passing one function into another */}
+      {contacts.map(createCard)}  
 
       {/* <Card
         name={contacts[0].name}
@@ -26,7 +27,7 @@ function App() {
         tel={contacts[0].phone}
         email={contacts[0].email}
       />
-      
+
       <Card
         name={contacts[1].name}
         img={contacts[1].imgURL}
