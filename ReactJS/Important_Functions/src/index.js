@@ -60,11 +60,13 @@
 
 // console.log(newNumber);
 
-//Challenge Solution
+
+
+// Challenge Solution
 import emojipedia from "./emojipedia";
 
-const newEmojipedia = emojipedia.map(function(emojiEntry) {
-  return emojiEntry.meaning.substring(0, 100);
-});
+  const newEmojipedia = emojipedia.map(function(emojiEntry) {
+      return emojiEntry.meaning.substring(0, 100);
+  });
 
-console.log(newEmojipedia);
+  console.log(newEmojipedia);
