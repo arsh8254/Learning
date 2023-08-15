@@ -6,7 +6,8 @@ var userIsRegistered = true;
 function App() {
   return (
     <div className="container">
-      <Form isRegistered={userIsRegistered} />
+      {/* we are passing the value of userIsRegistered to form by saving it in isRegistered variable */}
+      <Form isRegistered = {userIsRegistered} />
     </div>
   );
 }
