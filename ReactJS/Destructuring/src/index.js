@@ -1,41 +1,34 @@
-// import animals, { useAnimals } from "./data";
+import animals, { useAnimals } from "./data";
 
-// //Destructuring Arrays
-// // console.log(animals);
-// const [cat, dog] = animals;
-// // console.log(cat);
+// Destructuring Arrays
+console.log(animals);
+const [cat, dog] = animals;
+console.log(cat);
 
-// const [animal, makeSound] = useAnimals(cat);
-// console.log(animal);
-// makeSound();
+const [animal, makeSound] = useAnimals(cat);
+console.log(animal);
+makeSound();
 
-// //Destructuring Objects
-// // const { name, sound} = cat;
-// // const { name: catName, sound: catSound } = cat;
-// // const { name = "Fluffy", sound = "Purr" } = cat;
-// // const {feedingRequirements: {food, water} } = cat;
-// // console.log(food);
+// Destructuring Objects
+const { name, sound} = cat;
+const { name: catName, sound: catSound } = cat;      // for custom key names
+const { name = "Fluffy", sound = "Purr" } = cat;     // for default values
+const {feedingRequirements: {food, water} } = cat;   // for sub-objects
+console.log(food);
 
-// CHALLENGE: uncomment the code below and see the car stats rendered
+// CHALLENGE: uncomment the code below and see the car properties rendered
 import React from "react";
 import ReactDOM from "react-dom";
 import cars from "./practice";
 
+// Destructuring objects present in practice.js
 const [honda, tesla] = cars;
 
-const {
-  speedStats: { topSpeed: hondaTopSpeed }
-} = honda;
-const {
-  speedStats: { topSpeed: teslaTopSpeed }
-} = tesla;
+const { speedStats: { topSpeed: hondaTopSpeed }} = honda;
+const { speedStats: { topSpeed: teslaTopSpeed }} = tesla;
 
-const {
-  coloursByPopularity: [hondaTopColour]
-} = honda;
-const {
-  coloursByPopularity: [teslaTopColour]
-} = tesla;
+const { coloursByPopularity: [hondaTopColour]} = honda;
+const { coloursByPopularity: [teslaTopColour]} = tesla;
 
 ReactDOM.render(
   <table>

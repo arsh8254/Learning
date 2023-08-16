@@ -13,7 +13,8 @@ function unStrike() {
 function App() {
   return (
     <div>
-      <p style={isDone ? { textDecoration: "line-through" } : null}>Buy milk</p>
+      {/* the text "buy milk" will change as per state of isDone variable */}
+      <p style={isDone ? { textDecoration: "line-through" } : null}> Buy milk </p>
       <button onClick={strike}>Change to strike through</button>
       <button onClick={unStrike}>Change back</button>
     </div>
