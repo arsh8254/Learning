@@ -12,6 +12,7 @@ function App() {
   function handleClick(event) {
     setHeading(name);
 
+    // this stops the page from refreshing once the form is submitted
     event.preventDefault();
   }
 
@@ -23,7 +24,7 @@ function App() {
           onChange={handleChange}
           type="text"
           placeholder="What's your name?"
-          value={name}
+          value={name}   // name is equal to the input given by the user
         />
         <button type="submit">Submit</button>
       </form>

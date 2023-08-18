@@ -27,6 +27,7 @@ const [honda, tesla] = cars;
 const { speedStats: { topSpeed: hondaTopSpeed }} = honda;
 const { speedStats: { topSpeed: teslaTopSpeed }} = tesla;
 
+// giving custom names to keys as per need
 const { coloursByPopularity: [hondaTopColour]} = honda;
 const { coloursByPopularity: [teslaTopColour]} = tesla;
 

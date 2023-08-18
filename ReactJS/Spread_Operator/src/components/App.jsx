@@ -31,12 +31,14 @@ function App() {
           value={contact.fName}
           placeholder="First Name"
         />
+
         <input
           onChange={handleChange}
           name="lName"
           value={contact.lName}
           placeholder="Last Name"
         />
+        
         <input
           onChange={handleChange}
           name="email"

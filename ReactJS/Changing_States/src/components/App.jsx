@@ -15,6 +15,7 @@ function App() {
           fName: value,
           lName: prevValue.lName
         };
+        
       } else if (name === "lName") {
         return {
           fName: prevValue.fName,
@@ -27,7 +28,8 @@ function App() {
   return (
     <div className="container">
       <h1>
-        Hello {fullName.fName} {fullName.lName}
+        {/* we are fetching keys from a javascript object */}
+        Hello {fullName.fName} {fullName.lName}  
       </h1>
       <form>
         <input

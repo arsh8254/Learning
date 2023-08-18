@@ -17,12 +17,14 @@ function App() {
           lName: prevValue.lName,
           email: prevValue.email
         };
+
       } else if (name === "lName") {
         return {
           fName: prevValue.fName,
           lName: value,
           email: prevValue.email
         };
+
       } else if (name === "email") {
         return {
           fName: prevValue.fName,
@@ -42,16 +44,19 @@ function App() {
       <form>
         <input
           onChange={handleChange}
+          // value is added to maintain controlled states in react
           value={contact.fName}
           name="fName"
           placeholder="First Name"
         />
+
         <input
           onChange={handleChange}
           value={contact.lName}
           name="lName"
           placeholder="Last Name"
         />
+        
         <input
           onChange={handleChange}
           value={contact.email}
