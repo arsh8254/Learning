@@ -11,8 +11,12 @@ function App() {
 
   function addItem() {
     setItems(prevItems => {
-      return [...prevItems, inputText];
+      return [
+        ...prevItems,
+        inputText
+      ];
     });
+
     setInputText("");
   }
 

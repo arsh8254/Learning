@@ -12,6 +12,7 @@ function App() {
 
     setContact(prevValue => {
       return {
+        // prevValue contains fName, lName, email and gets added here
         ...prevValue,
         [name]: value
       };
@@ -38,7 +39,7 @@ function App() {
           value={contact.lName}
           placeholder="Last Name"
         />
-        
+
         <input
           onChange={handleChange}
           name="email"

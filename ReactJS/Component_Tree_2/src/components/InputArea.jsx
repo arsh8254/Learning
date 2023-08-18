@@ -12,7 +12,7 @@ function InputArea(props) {
     <div className="form">
       <input onChange={handleChange} type="text" value={inputText} />
       <button
-        onClick={() => {
+          onClick={() => {
           props.onAdd(inputText);
           setInputText("");
         }}

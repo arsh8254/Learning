@@ -4,6 +4,8 @@ import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
+
+// Spread Operator:-
 // const citrus = ["Lime", "Lemon", "Orange"];
 // const fruits = ["Apple", ...citrus, "Banana", "Coconut"];
 
